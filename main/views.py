@@ -27,12 +27,12 @@ def add_delivery_address(request):
                 city = city
                 defaults = {'latitude': location.latitude, 'lontitude': location.longitude}
 
-                return render(request, 'delivery_added_address.html', {'delivery_address': delivery_address})
+                return render(request, 'main/delivery_added_address.html', {'delivery_address': delivery_address})
             
             else:
                 return render(request, 'address_geocoding_error.html')
             
         except (GeocoderTimedOut, GeocoderQuotaExceeded, GeocoderServiceError) as ex:
-            return render(request, 'geocoding_error.html', {'error_message': str(ex)})
+            return render(request, 'main/geocoding_error.html', {'error_message': str(ex)})
     
-    return render(request, 'add_delivery_address')
+    return render(request, 'main/add_delivery_address')
