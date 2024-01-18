@@ -11,6 +11,7 @@ def home(request):
 
 @login_required
 def add_delivery_address(request):
+    API_KEY = ''
     if request == 'POST':
         street_address = request.POST.get('street_address', '')
         city = request.POST.get('city', '')
@@ -18,7 +19,7 @@ def add_delivery_address(request):
         full_address = f"{street_address}, {city},"
 
         try:
-            geolocator = GoogleV3("Google Api")
+            geolocator = GoogleV3(API_KEY="Google Api")
             location = geolocator.geocode(full_address)
 
             if location:
@@ -35,4 +36,4 @@ def add_delivery_address(request):
         except (GeocoderTimedOut, GeocoderQuotaExceeded, GeocoderServiceError) as ex:
             return render(request, 'main/geocoding_error.html', {'error_message': str(ex)})
     
-    return render(request, 'main/add_delivery_address')
+    return render(request, 'main/add_delivery_address.html')
