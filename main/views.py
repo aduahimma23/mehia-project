@@ -9,31 +9,31 @@ def home(request):
     return render(request, 'main/index.html')
 
 
-# @login_required
-# def add_delivery_address(request):
-#     API_KEY = ''
-#     if request == 'POST':
-#         street_address = request.POST.get('street_address', '')
-#         city = request.POST.get('city', '')
+@login_required
+def add_delivery_address(request):
+    API_KEY = ''
+    if request == 'POST':
+        street_address = request.POST.get('street_address', '')
+        city = request.POST.get('city', '')
 
-#         full_address = f"{street_address}, {city},"
+        full_address = f"{street_address}, {city},"
 
-#         try:
-#             geolocator = GoogleV3(API_KEY="Google Api")
-#             location = geolocator.geocode(full_address)
+        try:
+            geolocator = GoogleV3(API_KEY="Google Api")
+            location = geolocator.geocode(full_address)
 
-#             if location:
-#                 delivery_address, created = DeliveryAddress.objects.get_or_create
-#                 street_address = street_address
-#                 city = city
-#                 defaults = {'latitude': location.latitude, 'lontitude': location.longitude}
+            if location:
+                delivery_address, created = DeliveryAddress.objects.get_or_create
+                street_address = street_address
+                city = city
+                defaults = {'latitude': location.latitude, 'lontitude': location.longitude}
 
-#                 return render(request, 'main/delivery_added_address.html', {'delivery_address': delivery_address})
+                return render(request, 'main/delivery_added_address.html', {'delivery_address': delivery_address})
             
-#             else:
-#                 return render(request, 'address_geocoding_error.html')
+            else:
+                return render(request, 'address_geocoding_error.html')
             
-#         except (GeocoderTimedOut, GeocoderQuotaExceeded, GeocoderServiceError) as ex:
-#             return render(request, 'main/geocoding_error.html', {'error_message': str(ex)})
+        except (GeocoderTimedOut, GeocoderQuotaExceeded, GeocoderServiceError) as ex:
+            return render(request, 'main/geocoding_error.html', {'error_message': str(ex)})
     
-#     return render(request, 'main/add_delivery_address.html')
+    return render(request, 'main/add_delivery_address.html')
