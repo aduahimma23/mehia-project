@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'manager/css/style.css' %}">
+</head>
+  
+  <body>
+    
+    <div class="sidebar">
+      
+      <div class="section">
+        <img src="http://www.atpworldtour.com/-/media/tennis/players/head-shot/lq/retired/norman_m_headshot_lq/magnus_norman_2016.png">
+        <h2 id="user">Walter Buxley</h2>
+      </div> 
+      
+      <div class="section">
+        <h2>Main</h2>
+          <button><i class="fa fa-home"></i><p>Home</p></button>
+          <button><i class="fa fa-briefcase"></i><p>Jobs</p></button>
+          <button><i class="fa fa-linkedin"></i><p>Resume</p></button>
+          <button><i class="fa fa-calendar-check-o"></i><p>Tasks</p></button>
+          <button><i class="fa fa-calendar"></i><p>Calendar</p></button>
+      </div>
+      
+      <div class="section">
+        <h2>Admin</h2>
+          <button><i class="fa fa-users"></i><p>Users</p></button>
+          <button><i class="fa fa-map-marker"></i><p>Locations</p></button>
+          <button><i class="fa fa-sitemap"></i><p>Workflows</p></button>
+          <button><i class="fa fa-clipboard"></i><p>Job Boards</p></button>
+        <button><i class="fa fa-share-alt"></i><p>Social</p></button>
+      </div> 
+      
+      <div class="section">
+        <h2>Categories</h2>
+          <button>Social</button>
+      </div>
+      
+    </div>
+    
+      <div class="navbar"> 
+        <div class="nav-icon"> 
+          <p><i class="fa fa-bars" aria-hidden="true"></i><p>
+        </div>
+        
+        <div id="search-bar">
+          <span class="icon"><i class="fa fa-search"></i></span>
+          <input id="input1" type="search" placeholder="Search...">
+        </div> 
+        
+        <div class="nav-icon"> 
+          <p><i class="fa fa-user-o" aria-hidden="true"></i></p>
+        </div> 
+        
+        <div class="nav-icon"> 
+          <p><i class="fa fa-calendar" aria-hidden="true"></i></p>
+        </div> 
+        
+        <div class="nav-icon"> 
+          <p><i class="fa fa-th" aria-hidden="true"></i></p>
+        </div> 
+      </div>
+      
+       <div id="main">
+       <div class="user-info-bar">
+         <h1>Customer Service Representative</h1>
+         <p><i class="fa fa-map-marker"></i> San Francisco, Ca</p> 
+         <a href="#">Preview this post</a>
+         <div id="buttons">
+           <button type="text" id="open"><i class="fa fa-circle"></i> Open</button>
+           <button type="text"><i class="fa fa-bookmark"></i> </button>
+           <button type="text"><i class="fa fa-magic"></i> </button>
+           <button type="text"><i class="fa fa-bank"></i> </button>
+         </div>
+       </div>
+       
+       <div class="dashboard-navbar">
+         <button type="text" class="dash-nav">Summary</button>
+         <button type="text" class="dash-nav">Applicants</button>
+         <button type="text" class="dash-nav">Job Board</button>
+         <button type="text" class="dash-nav">Activity</button>
+         <button type="text" class="dash-nav">Broadcast</button>
+         <button type="text" class="dash-nav">Notifications</button>
+       </div>
+      
+<!--        <div class="data-viz">
+         <div class="data-1">
+            <div id="button">
+               <button type="text" id="open">Totals</button>
+             </div>
+         </div> 
+           
+         <div class="data-2">
+            <div id="button">
+               <button type="text" id="open">Applications/Day</button>
+             </div>
+         </div> 
+       </div> 
+        -->
+      <div class="dashboard">
+        <div class="job-table">
+          <table>
+            <tr>
+              <th></th>
+              <th>JOB DESCRIPTION</th>
+              <th><button type="text"><i class="fa fa-wrench"><p>EDIT<p></button></th>
+              <th></th>
+            </tr>
+            <tr>
+              <td></td>
+              <td>POSITION TITLE</td>
+              <td>Customer Service Representative</td><td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>LOCATION</td>
+              <td>San Francisco, CA</td><td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>EMPLOYMENT TYPE</td>
+              <td>Full Time</td><td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>EXPERIENCE</td>
+              <td>Mid Level</td><td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>STATUS</td>
+              <td>Open</td><td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>DESCRIPTION</td>
+              <td>Dont' wanna work work work, wanna make money while I sleep Dont' wanna work work work, wanna make money while I sleep </td><td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>HIRING LEAD</td>
+              <td><img  id="hr-lead" src="http://www.atpworldtour.com/-/media/tennis/players/head-shot/lq/retired/norman_m_headshot_lq/magnus_norman_2016.png"> Magnus Norman</td><td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>APPROVED SALARY</td>
+              <td>$58,000</td><td></td>
+            </tr>
+        </table>
+<!--         <div> 
+          <div class="job-row">
+            <p>Job Description</p>
+            <p><button type="text"><i class="fa fa-pencil"></i>Edit</button></p>
+          </div>
+          <div class="job-row">
+            <p>Job Title</p>
+            <p>Human Resources Wrangler</p>
+          </div>
+        </div> -->
+        </div>
+
+        <div class="widget-col">
+            <button type="text" class="social"><i class="fa fa-linkedin"></i> LinkedIn</button>
+            <button type="text" class="social"><i class="fa fa-facebook"></i> Facebook</button>
+            <button class="social" type="text" ><i class="fa fa-twitter"></i> Twitter</button>
+<!--             <a href="#"><i class="fa fa-twitter"></i> Twitter</a> -->
+
+          
+          <div class="comm-widget">
+            <h4><i class="fa fa-globe"></i> Link to this Job</h4>
+            <p>lorem drinksum</p>
+            <div>
+              <input id="POST-name" type="text" name="name" placeholder="  query">
+              <button class="copy" type="text">Copy</button>
+            </div>
+          </div>
+          <div class="comm-widget">
+            <h4><i class="fa fa-bullseye"></i> Use the Button Widget</h4>
+            <p>lorem drinksum</p>
+            <div>
+              <input id="POST-name" type="text" name="name">
+              <button type="text">Copy</button>
+            </div>
+          </div>
+          
+          <div class="comm-widget">
+            <h4><i class="fa fa-paper-plane"></i> Upload Resume by Email</h4>
+            <p>lorem drinksum</p>
+            <input id="POST-name" type="text" name="name">
+          </div>
+        </div> 
+
+      </div>
+    </div>
+    
+  </body> 
+
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+        feather.replace();
+    </script>
+
+</body>
+</html>
