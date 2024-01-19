@@ -1,33 +1,44 @@
+    
 from django.shortcuts import render, redirect
+from django.contrib.auth import login, authenticate, logout
+from .forms import CustomUserCreationForm
 from django.contrib.auth.forms import AuthenticationForm
-from django.contrib.auth import login, logout
-from .forms import NewUSerForm
+from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 
-def signup_view(request):
+def signup(request):
     if request.method == 'POST':
-        form = NewUSerForm(request.POST)
+        form = CustomUserCreationForm(request.POST)
         if form.is_valid():
             user = form.save()
             login(request, user)
-            return redirect('main:home')
+            messages.success(request, 'Account created successfully.')
+            return redirect('dashboard')
     else:
-        form = NewUSerForm()
-    return render(request, 'accounts/signup.html', { 'form': form })
+        form = CustomUserCreationForm()
+    
+    return render(request, 'account/signup.html', {'form': form})
 
 def login_view(request):
     if request.method == 'POST':
-        form = AuthenticationForm(data=request.POST)
+        form = AuthenticationForm(request, data=request.POST)
         if form.is_valid():
             user = form.get_user()
             login(request, user)
-            if 'next' in request.POST:
-                return redirect(request.POST.get('next'))
-            return redirect('main:home')
+            messages.success(request, 'Logged in successfully.')
+            return redirect('dashboard')
     else:
         form = AuthenticationForm()
-    return render(request, 'accounts/login.html', { 'form': form })
+    
+    return render(request, 'account/login.html', {'form': form})
 
+@login_required(login_url='login')
 def logout_view(request):
-    if request.method == 'POST':
-        logout(request)
-        return redirect('/')
+    logout(request)
+    messages.success(request, 'Logged out successfully.')
+    return redirect('login')
+
+@login_required(login_url='login')
+def dashboard(request):
+    user = request.user
+    return render(request, 'account/dashboard.html', {'user': user})

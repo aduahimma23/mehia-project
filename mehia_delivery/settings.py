@@ -13,14 +13,9 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 from pathlib import Path
 import os
 
-# Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
-
-# SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = "django-insecure-wu2$j(0(w2v$@w4wwq=9q0!b36s+!rg7k8+p$k+7cg#g2s%i5u"
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -40,7 +35,6 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     'main',
     'account',
-    'manager'
     'crispy_forms',
 ]
 
@@ -55,6 +49,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = "mehia_delivery.urls"
+AUTH_USER_MODEL = 'account.CustomUser'
 
 TEMPLATES = [
     {
