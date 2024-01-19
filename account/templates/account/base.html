@@ -1,10 +1,15 @@
 <!-- base.html -->
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
-    <title>{% block title %}My Site{% endblock %}</title>
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'account/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/font-awesome.min.css' %}">
 </head>
 <body>
+    <div class="container">
     {% block content %}{% endblock %}
+    </div>
 </body>
 </html>
