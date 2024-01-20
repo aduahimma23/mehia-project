@@ -5,7 +5,30 @@ from django.shortcuts import reverse
 from django.utils import timezone
 from account.models import CustomUser
 
-class Item(models.Model):
+
+class Category(models.Model):
+    name_of_category = models.CharField(max_length=100, blank=False)
+
+    def __str__(self):
+        return f"{self.name_of_category}"
+    
+
+class SubCategory(models.Model):
+    category = models.ForeignKey(Category, on_delete=models.CASCADE)
+    name = models.CharField(max_length=100, blank=False, unique=False)
+
+    def __str__(self):
+        return self.name
+
+
+class Product(models.Model):
+    subcategory = models.ForeignKey(SubCategory, on_delete=models.CASCADE)
+    name = models.CharField(max_length=100, blank=False)
+
+    def __str__(self):
+        return self.name
+
+class Items(models.Model):
     LABELS = (
         ('Best Seller', 'Best Seller'),
         ('New Food', 'New Food'),
@@ -15,6 +38,7 @@ class Item(models.Model):
         ('danger', 'danger'),
         ('success', 'success'),
     )
+    product = models.ForeignKey(Product, on_delete=models.CASCADE)
     title = models.CharField(max_length=150)
     description = models.CharField(max_length=250,blank=True)
     price = models.FloatField()
@@ -52,7 +76,7 @@ class Item(models.Model):
 
 class Reviews(models.Model):
     CustomUser = models.ForeignKey(CustomUser, on_delete = models.CASCADE)
-    item = models.ForeignKey(Item, on_delete = models.CASCADE)
+    item = models.ForeignKey(Items, on_delete = models.CASCADE)
     rslug = models.SlugField()
     review = models.TextField()
     posted_on = models.DateField(default=timezone.now)
@@ -71,7 +95,7 @@ class CartItems(models.Model):
         ('Delivered', 'Delivered')
     )
     user = models.ForeignKey(CustomUser, on_delete=models.CASCADE)
-    item = models.ForeignKey(Item, on_delete=models.CASCADE)
+    item = models.ForeignKey(Items, on_delete=models.CASCADE)
     ordered = models.BooleanField(default=False)
     quantity = models.IntegerField(default=1)
     ordered_date = models.DateField(default=timezone.now)
