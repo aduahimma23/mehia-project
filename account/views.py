@@ -26,19 +26,19 @@ def login_view(request):
             user = form.get_user()
             login(request, user)
             messages.success(request, 'Logged in successfully.')
-            return redirect('dashboard')
+            return redirect('main:home')
     else:
         form = AuthenticationForm()
     
     return render(request, 'account/login.html', {'form': form})
 
-@login_required(login_url='login')
+@login_required(login_url='account:login')
 def logout_view(request):
     logout(request)
     messages.success(request, 'Logged out successfully.')
-    return redirect('login')
+    return redirect('main:home')
 
-@login_required(login_url='login')
+@login_required(login_url='account:login')
 def dashboard(request):
     user = request.user
     return render(request, 'account/dashboard.html', {'user': user})
