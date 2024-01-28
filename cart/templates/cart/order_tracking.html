@@ -1,0 +1,23 @@
+
+
+{% block content %}
+    <h1>Order Tracking</h1>
+    <p>Order ID: {{ order_tracking.order.id }}</p>
+    
+    <p>Status: {{ order_tracking.get_status_display }}</p>
+    
+    {% if order_tracking.estimated_delivery_time %}
+        <p>Estimated Delivery Time: {{ order_tracking.estimated_delivery_time }}</p>
+    {% endif %}
+    
+    {% if order_tracking.actual_delivery_time %}
+        <p>Actual Delivery Time: {{ order_tracking.actual_delivery_time }}</p>
+    {% endif %}
+
+    {% if order_tracking.location_lat and order_tracking.location_lon %}
+        <p>Delivery Staff Location: ({{ order_tracking.location_lat }}, {{ order_tracking.location_lon }})</p>
+    {% endif %}
+
+    <p>Created At: {{ order_tracking.created_at }}</p>
+    <p>Updated At: {{ order_tracking.updated_at }}</p>
+{% endblock %}

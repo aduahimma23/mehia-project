@@ -1,189 +1,193 @@
 {% load static %}
-
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Mehia Groups</title>
-        <!-- bootstrap core css -->
-        <link rel="stylesheet" type="text/css" href="{% static 'main/css/bootstrap.css' %}" />
-        <!--owl slider stylesheet -->
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-        <!-- nice select  -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha512-CruCP+TD3yXzlvvijET8wV5WxxEh5H8P4cmz0RFbKK6FlZ2sYl3AEsKlLPHbniXKSrDdFewhbmBK5skbdsASbQ==" crossorigin="anonymous" />
-        <!-- font awesome style -->
-        <link href="{% static 'main/css/font-awesome.min.css' %}" rel="stylesheet"/>
-        <!-- Custom styles for this template -->
-        <link href="{% static 'main/css/style.css' %}" rel="stylesheet"/>
-        <!-- responsive style -->
-        <link href="{% static 'main/css/responsive.css' %}" rel="stylesheet"/>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Domnoo Restaurant & Pizza HTML Template</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/static/main/images/fav2.ico" type="image/x-icon">
+    <link rel="icon" href="/static/main/images/fav2.ico" type="image/x-icon">
+    <!-- include the site stylesheet -->
+    <link rel="stylesheet" href="/static/main/css/bootstrap.min.css">
+    <!-- main stylesheet -->
+    <link rel="stylesheet" href="/static/main/css/style.css">
+    <!-- color stylesheet -->
+    <link rel="stylesheet" href="/static/main/css/colors.css" id="ui-theme-color">
+    <!-- responsive css -->
+    <link rel="stylesheet" href="/static/main/css/responsive.css">
+</head>
+<body>
+	<div class="loader_wrapper">
+        <div class="loader">
+			<img src="/static/main/images/loader.gif" alt="" class="img-fluid">
+        </div>
+    </div>
+    <!--// loader_wrapper -->
 
-    <body>
-        <div class="hero_area">
-            <div class="bg-box">
-                <img src="{% static 'main/images/hero-bg.jpg' %}" alt=""/>
-            </div>
-            <!-- header section strats -->
-            <header class="header_section">
-                <div class="container">
-                  <nav class="navbar navbar-expand-lg custom_nav-container ">
-                    <a class="navbar-brand" href="index.html"><span>Mehia</span></a>
-                
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class=""> </span>
-                    </button>
-                
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav  mx-auto ">
-                            <li class="nav-item">
-                                <a class="nav-link" href="{% url 'main:home' %}">Home </a>
-                            </li>
-                            
-                                <li class="nav-item">
-                                    <a class="nav-link" href="menu.html">Menu</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="about.html">About</a>
-                                </li>
-                                {% if not user.is_authenticated %}
-                                <li class="nav-item">
-                                    <a href="{% url 'account:login' %}" class="mr-2 text-light nav-link">Login</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="{% url 'account:signup' %}" class="mr-2 text-light nav-link">SignUp</a>
-                                </li>
-                                {% else %}
-                                <li class="nav-item">
-                                    <a href="{% url 'account:logout' %}" class="mr-2 text-light nav-link">Logout</a>
-                                </li>
-                                {% endif %}
-                              
-                        </ul>
+	<div id="wrapper">
+		<header class="new-block main-header">
+			<div class="main-nav new-block">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="logo">
+								<a href="{% url 'main:home' %}">
+									<img src="/static/main/images/logo/mehia_icon.png" alt="logo" class="img-responsive">
+								</a>
+							</div>
+							<div class="location-block">
+								<p>Ghana</p>
+								<span>+233 123 456 789</span>
+							</div>
+							<a href="#" class="nav-opener"><i class="fa fa-bars"></i></a>
+							<nav class="nav">
+								<ul class="list-unstyled">
+									<li class="drop active"><a href="{% url 'main:home' %}">Home</a></li>
+									<li class=""><a href="{% url 'main:menu' %}">Menu</a></li>
+									<li class="drop"><a href="#">Meals</a>
+										<ul class="drop-down">
+											<li><a href="menu.html">Menu</a></li>
+											<li><a href="menu2.html">Menu2</a></li>
+											<li><a href="about_us.html">About</a></li>
+											<li><a href="blog.html">Blog</a></li>
+											<li><a href="blog_left.html">Blog left</a></li>
+											<li><a href="blog_right.html">Blog right</a></li>
+											<li><a href="blog_single.html">Single blog</a></li>
+											<li><a href="contact.html">Contact us</a></li>
+											<li><a href="product_single.html">Product single</a></li>
+											<li><a href="shopping_cart.html">Cart page</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Pizza</a></li>
+									<li><a href="#">Location</a></li>
+									<li><a href="{% url 'main:contact' %}">Contact Us</a></li>
+									<li><a href="#">Login/Signup</a></li>
+								</ul>
+							</nav>
+							<div class="nav-right-block">
+								<ul class="list-unstyled">
+									<li><a href="#"><i class="flaticon-scooter-front-view"></i><span class="nav-price">$00.00</span></a></li>
+								</ul>
+							</div><!-- nav-login -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</header> <!-- header -->		
 
-                        <div class="user_option">
-                            <a href="" class="user_link">
-                                <i class="fa fa-user" aria-hidden="true"></i>   
-                            </a>
-                            <a class="cart_link" href="#">
-                              <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
-                                    <g>
-                                        <g>
-                                            <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
-                                            c29.184,0,53.248-23.552,53.248-53.248C398.336,362.926,374.784,338.862,345.6,338.862z" />
-                                        </g>
-                                    </g>
-                                <g>
-                                    <g>
-                                        <path d="M439.296,84.91c-1.024,0-2.56-0.512-4.096-0.512H112.64l-5.12-34.304C104.448,27.566,84.992,10.67,61.952,10.67H20.48
-                                        C9.216,10.67,0,19.886,0,31.15c0,11.264,9.216,20.48,20.48,20.48h41.472c2.56,0,4.608,2.048,5.12,4.608l31.744,216.064
-                                        c4.096,27.136,27.648,47.616,55.296,47.616h212.992c26.624,0,49.664-18.944,55.296-45.056l33.28-166.4
-                                        C457.728,97.71,450.56,86.958,439.296,84.91z" />
-                                    </g>
-                                </g>
-                                <g>
-                                    <g>
-                                        <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
-                                        c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
-                                    </g>
-                                </g>
-                              </svg>
-                            </a>
-                          <form class="form-inline">
-                            <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
-                              <i class="fa fa-search" aria-hidden="true"></i>
-                            </button>
-                          </form>
-                          <a href="" class="order_online">Order Online</a>
-                        </div>       
-                    </div>
-                  </nav>
-                </div>
-            </header>
-            <!-- end header section -->
-        </div>        
+		<div>
+			{% block content %}
 
-        {% block content %}{% endblock %}
+			{% endblock %}
+		</div>
 
-        <!-- footer section -->
-        <footer class="footer_section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 footer-col">
-                        <div class="footer_contact">
-                            <h4>Contact Us</h4>
-                            <div class="contact_link_box">
-                                <a href="">
-                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                    <span>Location</span>
-                                </a>
-                                <a href="">
-                                    <i class="fa fa-phone" aria-hidden="true"></i>
-                                    <span>Call +01 1234567890</span>
-                                </a>
-                                <a href="">
-                                    <i class="fa fa-envelope" aria-hidden="true"></i>
-                                    <span>demo@gmail.com</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 footer-col">
-                        <div class="footer_detail">
-                            <a href="" class="footer-logo">Mehia</a>
-                            <p>Necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with</p>
-                            <div class="footer_social">
-                                <a href="">
-                                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                                </a>
-                                <a href="">
-                                    <i class="fa fa-twitter" aria-hidden="true"></i>
-                                </a>
-                                <a href="">
-                                    <i class="fa fa-linkedin" aria-hidden="true"></i>
-                                </a>
-                                <a href="">
-                                    <i class="fa fa-instagram" aria-hidden="true"></i>
-                                </a>
-                                <a href="">
-                                    <i class="fa fa-pinterest" aria-hidden="true"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 footer-col">
-                        <h4>Opening Hours</h4>
-                        <p>Everyday</p>
-                        <p>07.00 Am - 10.00 Pm</p>
-                    </div>
-                </div>
-                <div class="footer-info">
-                    <p>
-                        &copy; <span id="displayYear"></span> All Rights Reserved By
-                        &copy; <span id="displayYear"></span> Distributed By
-                        <a href="#" target="_blank">Mehia Groups</a>
-                    </p>
-                </div>
-            </div>
-        </footer>
-        <!-- footer section -->
+		<footer class="main-footer new-block">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+						<div class="footer-head">
+							<h3>About Us :</h3>
+						</div>
+						<div class="footer-content">
+							<p>Wohia den? Mehia Online Deal brand is a registered online Marketing and Advertising Store which is exclusively for E-Commence purposes.</p>
+							<a href="{% url 'main:about' %}" class="link">Read More</a>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+						<div class="our-company">
+							<div class="footer-head">
+								<h3>Our Company :</h3>
+							</div>
+							<div class="footer-content">
+								<ul class="list-unstyled">
+									<li><a href="#">New In</a></li>
+									<li><a href="#">Pizza murgon</a></li>
+									<li><a href="#">Burger king</a></li>
+									<li><a href="#">Fried Chicken</a></li>
+									<li><a href="#">Mocktail</a></li>
+									<li><a href="#">Top Brands</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
+						<div class="footer-head">
+							<h3>Customer Care :</h3>
+						</div>
+						<div class="footer-content">
+							<ul class="list-unstyled">
+								<li><a href="#">New In</a></li>
+								<li><a href="#">Pizza murgon</a></li>
+								<li><a href="#">Burger king</a></li>
+								<li><a href="#">Fried Chicken</a></li>
+								<li><a href="#">Mocktail</a></li>
+								<li><a href="#">Top Brands</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+						<div class="flickr">
+							<div class="footer-head">
+								<h3>Get Flickr :</h3>
+							</div>
+							<div class="footer-content">
+								<ul class="list-unstyled">
+									<li><a href="#"><img src="/static/main/images/Layer-12.jpg" alt="" class="img-responsive"></a></li>
+									<li><a href="#"><img src="/static/main/images/Layer-13.jpg" alt="" class="img-responsive"></a></li>
+									<li><a href="#"><img src="/static/main/images/Layer-14.jpg" alt="" class="img-responsive"></a></li>
+									<li><a href="#"><img src="/static/main/images/Layer-15.jpg" alt="" class="img-responsive"></a></li>
+									<li><a href="#"><img src="/static/main/images/Layer-16.png" alt="" class="img-responsive"></a></li>
+									<li><a href="#"><img src="/static/main/images/Layer-17.jpg" alt="" class="img-responsive"></a></li>
+									<li><a href="#"><img src="/static/main/images/Layer-18.jpg" alt="" class="img-responsive"></a></li>
+									<li><a href="#"><img src="/static/main/images/Layer-19.jpg" alt="" class="img-responsive"></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<div class="copy-right">
+			<div class="container">
+				<p><a target="_blank" href="https://www.templateshub.net">Mehia Online</a></p>
+				<ul class="social-nav">
+					<li><a href="#"><i class="flaticon-facebook-logo"></i></a></li>
+					<li><a href="#"><i class="flaticon-twitter"></i></a></li>
+					<li><a href="#"><i class="flaticon-google-plus-logo"></i></a></li>
+					<li><a href="#"><i class="flaticon-dribbble-logo"></i></a></li>
+					<li><a href="#"><i class="flaticon-behance"></i></a></li>
+				</ul>
+			</div>
+		</div>
+		<span id="go_to_top" class="go-to-top"><i class="flaticon-up-arrow"></i></span>
 
-        <!-- jQery -->
-        <script src="{% static 'main/js/jquery-3.4.1.min.js' %}"></script>
-        <!-- custom js -->
-        <script src="{% static 'main/js/custom.js' %}"></script>
-        <!-- bootstrap js -->
-        <script src="{% static 'main/js/bootstrap.js' %}"></script>
-        <!-- popper js -->
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" 
-        crossorigin="anonymous"></script>
-        <!-- owl slider -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-        <!-- isotope js -->
-        <script src="https://unpkg.com/isotope-layout@3.0.4/dist/isotope.pkgd.min.js"></script>
-        <!-- nice select -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+	</div><!-- #wrapper -->
 
-    </body>
+
+	<!-- include jQuery -->
+    <script src="/static/main/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="/static/main/js/bootstrap.min.html"></script>
+    <!-- bootstrap -->
+    <script src="/static/main/js/owl.carousel.min.js"></script>
+    <!-- slick slider  -->
+	<script src="/static/main/js/slick.js"></script>
+	<!-- dscountdown  -->
+	<script src="/static/main/js/dscountdown.min.js"></script>
+    <!-- jquery.nice-select -->
+    <script src="/static/main/js/jquery.nice-select.js"></script>
+    <!-- magnific-popup -->
+    <script src="/static/main/js/jquery.magnific-popup.min.js"></script>
+    <!-- Mixitup -->
+    <script src="/static/main/js/mixitup.min.js"></script>
+    <!-- Google Map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBP1lPhUhDU6MINpruPDinAzXffRlpzzFo"></script>
+	<script src="/static/main/js/map.js"></script>
+    <!-- custom js -->
+    <script src="/static/main/js/custom.js"></script>
+
+</body>
+
+
 </html>

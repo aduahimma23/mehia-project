@@ -1,693 +1,823 @@
 {% extends 'main/base.html' %}
 {% block content %}
-{% load static %}
 
-  <!-- offer section -->
+<div class="banner slider1 new-block">
+    <div class="fixed-bg" style="background: url('/static/main/images/slider-bg1.jpg');"></div>
+    <div class="slider owl-carousel owl-theme">
+        <div class="item">
+            <div class="slider-block slide1 new-block">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="text-block">
+                                <div class="img-block ab1" data-animation-in="bounceInDown" data-animation-out="animate-out fadeOutRight">
+                                    <img src="/static/main/images/pizza.png" alt="" class="img-responsive">
+                                </div>
+                                <h1 class="text-stl1" data-animation-in="lightSpeedIn" data-animation-out="animate-out fadeOutRight">buy get one free</h1>
+                                <div class="number-block" data-animation-in="fadeInUp" data-animation-out="animate-out fadeOutRight">
+                                    <p class="text-stl2">Aliquam laoreet orci quis risus vulputate tempor Quisque aliquetmattis mattis tortor nibh cursus lorem</p>
+                                    <h2 class="text-stl3">+00 123 456 789</h2>
+                                    <div class="text-center">
+                                        <a href="#" class="btn1 stl2">About More</a>
+                                        <a href="#" class="btn1 stl1">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="img-block img2">
+                                <div class="img-holder" data-animation-in="fadeInDown" data-animation-out="animate-out fadeOutRight">
+                                    <img src="/static/main/images/pz.png" alt="" class="img-responsive">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- .slider-block -->
+        </div>
+        <div class="item">
+            <div class="slider-block slide1 new-block">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="text-block">
+                                <div class="img-block ab1" data-animation-in="bounceInDown" data-animation-out="animate-out fadeOutRight">
+                                    <img src="/static/main/images/pizza.png" alt="" class="img-responsive">
+                                </div>
+                                <h1 class="text-stl1" data-animation-in="lightSpeedIn" data-animation-out="animate-out fadeOutRight">buy get one free</h1>
+                                <div class="number-block" data-animation-in="fadeInUp" data-animation-out="animate-out fadeOutRight">
+                                    <p class="text-stl2">Aliquam laoreet orci quis risus vulputate tempor Quisque aliquetmattis mattis tortor nibh cursus lorem</p>
+                                    <h2 class="text-stl3">+00 123 456 789</h2>
+                                    <div class="text-center">
+                                        <a href="#" class="btn1 stl2">About More</a>
+                                        <a href="#" class="btn1 stl1">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="img-block img2">
+                                <div class="img-holder" data-animation-in="fadeInDown" data-animation-out="animate-out fadeOutRight">
+                                    <img src="/static/main/images/sldr.png" alt="" class="img-responsive">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- .slider-block -->
+        </div>
+    </div>
+</div><!-- banner -->
 
-  <section class="offer_section layout_padding-bottom">
-    <div class="offer_container">
-      <div class="container ">
+<section class="cat-sec new-block">
+    <div class="container-fluid pd0">
+        <div class="cat-block">
+            <div class="block-stl1 bg1">
+                <span class="flaticon-pizza"></span>
+                <h4>Pizza</h4>
+            </div>
+        </div>
+        <div class="cat-block">
+            <div class="block-stl1 bg2">
+                <span class="flaticon-burger"></span>
+                <h4>Burgers</h4>
+            </div>
+        </div>
+        <div class="cat-block">
+            <div class="block-stl1 bg3">
+                <span class="flaticon-fried-chicken"></span>
+                <h4>Chicken</h4>
+            </div>
+        </div>
+        <div class="cat-block">
+            <div class="block-stl1 bg4">
+                <span class="flaticon-salad"></span>
+                <h4>Salad</h4>
+            </div>
+        </div>
+        <div class="cat-block">
+            <div class="block-stl1 bg5">
+                <span class="flaticon-french-fries"></span>
+                <h4>Fries</h4>
+            </div>
+        </div>
+        <div class="cat-block">
+            <div class="block-stl1 bg6">
+                <span class="flaticon-drink"></span>
+                <h4>Drinks</h4>
+            </div>
+        </div>
+        <div class="cat-block">
+            <div class="block-stl1 bg7">
+                <span class="flaticon-taco"></span>
+                <h4>Taco</h4>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="special-offers-sec new-block">
+    <div class="special-offer-inr-block new-block">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="title">
+                        <p class="top-h">today special</p>
+                        <h2>festive season offers</h2>
+                        <div class="btm-style"><span><img src="/static/main/images/btm-style.png" alt="" class="img-responsive"></span></div>
+                    </div>
+                </div>
+                <div class="col-lg-12 pd0">
+                    <div class="special-offer-block ol_flr new-block">
+                        <div class="ol_flr">
+                            <div class="nav btn-filter-wrap">
+                                <button id="js-filter-0" class="filterer btn"><span>Chicken</span></button>
+                                <button id="js-filter-1" class="filterer btn"><span>Meats</span></button>
+                                <button id="js-filter-2" class="filterer btn"><span>Populars all in Domnoo</span></button>
+                                <button id="js-filter-3" class="filterer btn"><span>Veggie</span></button>
+                                <button id="js-filter-4" class="filterer btn"><span>Burgers</span></button>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="slider-flr" id="filter_itm1">
+                                <div class="js-filter-chicken">
+                                    <div class="block-stl2">
+                                        <div class="img-holder">
+                                            <img src="/static/main/images/img.png" alt="" class="img-responsive">
+                                        </div>
+                                        <div class="text-block">
+                                            <h3>Veggie Supreme</h3>
+                                            <p class="sz">Size : Regular</p>
+                                            <p class="price"><span>$6.00</span> <del>$8.00 40% off</del></p>
+                                        </div>
+                                        <div class="btn-sec">
+                                            <a href="product_single.html" class="btn4">About More</a>
+                                            <a href="shopping_cart.html" class="btn1 stl2">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="js-filter-chicken">
+                                    <div class="block-stl2">
+                                        <div class="img-holder">
+                                            <img src="/static/main/images/img1.png" alt="" class="img-responsive">
+                                        </div>
+                                        <div class="text-block">
+                                            <h3>Veggie Supreme</h3>
+                                            <p class="sz">Size : Regular</p>
+                                            <p class="price"><span>$6.00</span> <del>$8.00 40% off</del></p>
+                                        </div>
+                                        <div class="btn-sec">
+                                            <a href="product_single.html" class="btn4">About More</a>
+                                            <a href="shopping_cart.html" class="btn1 stl2">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="js-filter-meats">
+                                    <div class="block-stl2">
+                                        <div class="img-holder">
+                                            <img src="/static/main/images/img2.png" alt="" class="img-responsive">
+                                        </div>
+                                        <div class="text-block">
+                                            <h3>Veggie Supreme</h3>
+                                            <p class="sz">Size : Regular</p>
+                                            <p class="price"><span>$6.00</span> <del>$8.00 40% off</del></p>
+                                        </div>
+                                        <div class="btn-sec">
+                                            <a href="product_single.html" class="btn4">About More</a>
+                                            <a href="shopping_cart.html" class="btn1 stl2">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="js-filter-populars">
+                                    <div class="block-stl2">
+                                        <div class="img-holder">
+                                            <img src="/static/main/images/img3.png" alt="" class="img-responsive">
+                                        </div>
+                                        <div class="text-block">
+                                            <h3>Veggie Supreme</h3>
+                                            <p class="sz">Size : Regular</p>
+                                            <p class="price"><span>$6.00</span> <del>$8.00 40% off</del></p>
+                                        </div>
+                                        <div class="btn-sec">
+                                            <a href="product_single.html" class="btn4">About More</a>
+                                            <a href="shopping_cart.html" class="btn1 stl2">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="js-filter-chicken">
+                                    <div class="block-stl2">
+                                        <div class="img-holder">
+                                            <img src="/static/main/images/img4.png" alt="" class="img-responsive">
+                                        </div>
+                                        <div class="text-block">
+                                            <h3>Veggie Supreme</h3>
+                                            <p class="sz">Size : Regular</p>
+                                            <p class="price"><span>$6.00</span> <del>$8.00 40% off</del></p>
+                                        </div>
+                                        <div class="btn-sec">
+                                            <a href="product_single.html" class="btn4">About More</a>
+                                            <a href="shopping_cart.html" class="btn1 stl2">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="js-filter-veggie">
+                                    <div class="block-stl2">
+                                        <div class="img-holder">
+                                            <img src="/static/main/images/img5.png" alt="" class="img-responsive">
+                                        </div>
+                                        <div class="text-block">
+                                            <h3>Veggie Supreme</h3>
+                                            <p class="sz">Size : Regular</p>
+                                            <p class="price"><span>$6.00</span> <del>$8.00 40% off</del></p>
+                                        </div>
+                                        <div class="btn-sec">
+                                            <a href="product_single.html" class="btn4">About More</a>
+                                            <a href="shopping_cart.html" class="btn1 stl2">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="js-filter-chicken">
+                                    <div class="block-stl2">
+                                        <div class="img-holder">
+                                            <img src="/static/main/images/img3.png" alt="" class="img-responsive">
+                                        </div>
+                                        <div class="text-block">
+                                            <h3>Veggie Supreme</h3>
+                                            <p class="sz">Size : Regular</p>
+                                            <p class="price"><span>$6.00</span> <del>$8.00 40% off</del></p>
+                                        </div>
+                                        <div class="btn-sec">
+                                            <a href="product_single.html" class="btn4">About More</a>
+                                            <a href="shopping_cart.html" class="btn1 stl2">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="js-filter-chicken">
+                                    <div class="block-stl2">
+                                        <div class="img-holder">
+                                            <img src="/static/main/images/img.png" alt="" class="img-responsive">
+                                        </div>
+                                        <div class="text-block">
+                                            <h3>Veggie Supreme</h3>
+                                            <p class="sz">Size : Regular</p>
+                                            <p class="price"><span>$6.00</span> <del>$8.00 40% off</del></p>
+                                        </div>
+                                        <div class="btn-sec">
+                                            <a href="product_single.html" class="btn4">About More</a>
+                                            <a href="shopping_cart.html" class="btn1 stl2">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="js-filter-burgers">
+                                    <div class="block-stl2">
+                                        <div class="img-holder">
+                                            <img src="/static/main/images/img5.png" alt="" class="img-responsive">
+                                        </div>
+                                        <div class="text-block">
+                                            <h3>Veggie Supreme</h3>
+                                            <p class="sz">Size : Regular</p>
+                                            <p class="price"><span>$6.00</span> <del>$8.00 40% off</del></p>
+                                        </div>
+                                        <div class="btn-sec">
+                                            <a href="product_single.html" class="btn4">About More</a>
+                                            <a href="shopping_cart.html" class="btn1 stl2">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="js-filter-chicken">
+                                    <div class="block-stl2">
+                                        <div class="img-holder">
+                                            <img src="/static/main/images/img1.png" alt="" class="img-responsive">
+                                        </div>
+                                        <div class="text-block">
+                                            <h3>Veggie Supreme</h3>
+                                            <p class="sz">Size : Regular</p>
+                                            <p class="price"><span>$6.00</span> <del>$8.00 40% off</del></p>
+                                        </div>
+                                        <div class="btn-sec">
+                                            <a href="product_single.html" class="btn4">About More</a>
+                                            <a href="shopping_cart.html" class="btn1 stl2">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="js-filter-chicken">
+                                    <div class="block-stl2">
+                                        <div class="img-holder">
+                                            <img src="/static/main/images/img.png" alt="" class="img-responsive">
+                                        </div>
+                                        <div class="text-block">
+                                            <h3>Veggie Supreme</h3>
+                                            <p class="sz">Size : Regular</p>
+                                            <p class="price"><span>$6.00</span> <del>$8.00 40% off</del></p>
+                                        </div>
+                                        <div class="btn-sec">
+                                            <a href="product_single.html" class="btn4">About More</a>
+                                            <a href="shopping_cart.html" class="btn1 stl2">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="js-filter-burgers">
+                                    <div class="block-stl2">
+                                        <div class="img-holder">
+                                            <img src="/static/main/images/img3.png" alt="" class="img-responsive">
+                                        </div>
+                                        <div class="text-block">
+                                            <h3>Veggie Supreme</h3>
+                                            <p class="sz">Size : Regular</p>
+                                            <p class="price"><span>$6.00</span> <del>$8.00 40% off</del></p>
+                                        </div>
+                                        <div class="btn-sec">
+                                            <a href="product_single.html" class="btn4">About More</a>
+                                            <a href="shopping_cart.html" class="btn1 stl2">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="js-filter-meats">
+                                    <div class="block-stl2">
+                                        <div class="img-holder">
+                                            <img src="/static/main/images/img.png" alt="" class="img-responsive">
+                                        </div>
+                                        <div class="text-block">
+                                            <h3>Veggie Supreme</h3>
+                                            <p class="sz">Size : Regular</p>
+                                            <p class="price"><span>$6.00</span> <del>$8.00 40% off</del></p>
+                                        </div>
+                                        <div class="btn-sec">
+                                            <a href="product_single.html" class="btn4">About More</a>
+                                            <a href="shopping_cart.html" class="btn1 stl2">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="js-filter-meats">
+                                    <div class="block-stl2">
+                                        <div class="img-holder">
+                                            <img src="/static/main/images/img1.png" alt="" class="img-responsive">
+                                        </div>
+                                        <div class="text-block">
+                                            <h3>Veggie Supreme</h3>
+                                            <p class="sz">Size : Regular</p>
+                                            <p class="price"><span>$6.00</span> <del>$8.00 40% off</del></p>
+                                        </div>
+                                        <div class="btn-sec">
+                                            <a href="product_single.html" class="btn4">About More</a>
+                                            <a href="shopping_cart.html" class="btn1 stl2">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="js-filter-meats">
+                                    <div class="block-stl2">
+                                        <div class="img-holder">
+                                            <img src="/static/main/images/img.png" alt="" class="img-responsive">
+                                        </div>
+                                        <div class="text-block">
+                                            <h3>Veggie Supreme</h3>
+                                            <p class="sz">Size : Regular</p>
+                                            <p class="price"><span>$6.00</span> <del>$8.00 40% off</del></p>
+                                        </div>
+                                        <div class="btn-sec">
+                                            <a href="product_single.html" class="btn4">About More</a>
+                                            <a href="shopping_cart.html" class="btn1 stl2">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="spl-offer new-block">
+    <div class="container-fluid c-grid">
         <div class="row">
-          <div class="col-md-6  ">
-            <div class="box ">
-              <div class="img-box">
-                <img src="{% static 'main/images/o1.jpg' %}" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>
-                  Tasty Thursdays
-                </h5>
-                <h6>
-                  <span>20%</span> Off
-                </h6>
-                <a href="">
-                  Order Now <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
-                    <g>
-                      <g>
-                        <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
-                     c29.184,0,53.248-23.552,53.248-53.248C398.336,362.926,374.784,338.862,345.6,338.862z" />
-                      </g>
-                    </g>
-                    <g>
-                      <g>
-                        <path d="M439.296,84.91c-1.024,0-2.56-0.512-4.096-0.512H112.64l-5.12-34.304C104.448,27.566,84.992,10.67,61.952,10.67H20.48
-                     C9.216,10.67,0,19.886,0,31.15c0,11.264,9.216,20.48,20.48,20.48h41.472c2.56,0,4.608,2.048,5.12,4.608l31.744,216.064
-                     c4.096,27.136,27.648,47.616,55.296,47.616h212.992c26.624,0,49.664-18.944,55.296-45.056l33.28-166.4
-                     C457.728,97.71,450.56,86.958,439.296,84.91z" />
-                      </g>
-                    </g>
-                    <g>
-                      <g>
-                        <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
-                     c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
-                      </g>
-                    </g>
-                  </svg>
-                </a>
-              </div>
+            <div class="grid1">
+                <div class="block-stl3 stl1">
+                    <div class="fixed-bg" style="background: url('/static/main/images/img6.jpg');"></div>
+                    <div class="img-holder">
+                        <img src="/static/main/images/img6.png" alt="" class="img-responsive">
+                    </div>
+                    <div class="offer-block">
+                        <p class="top-h">combo pack offer</p>
+                        <h2>want something real & juicy ?</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ornare placerat tellus.</p>
+                        <a href="shopping_cart.html" class="btn3">shop now</a>
+
+                    </div>
+                </div>
+                <div class="c-grid2">
+                    <div class="col1">
+                        <div class="block-stl3 stl3">
+                            <div class="img-holder">
+                                <img src="/static/main/images/img7.png" alt="" class="img-responsive">
+                            </div>
+                            <div class="offer-block">
+                                <h2>new arrivals</h2>
+                                <p>Lorem ipsum dolor sit amconsetur adipiscing elit. Integer</p>
+                                <a href="shopping_cart.html" class="btn3">shop now</a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col2">
+                        <div class="block-stl3 bg9 stl4">
+                            <div class="img-holder">
+                                <img src="/static/main/images/img8.png" alt="" class="img-responsive">
+                            </div>
+                            <div class="offer-block">
+                                <h2>hot chicken</h2>
+                                <p>An to our fun day.Lorem ipsum dolor sit aadipiscing elit</p>
+                                <a href="shopping_cart.html" class="btn3">shop now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-md-6  ">
-            <div class="box ">
-              <div class="img-box">
-                <img src="{% static 'main/images/o2.jpg' %}" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>
-                  Pizza Days
-                </h5>
-                <h6>
-                  <span>15%</span> Off
-                </h6>
-                <a href="">
-                  Order Now <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
-                    <g>
-                      <g>
-                        <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
-                     c29.184,0,53.248-23.552,53.248-53.248C398.336,362.926,374.784,338.862,345.6,338.862z" />
-                      </g>
-                    </g>
-                    <g>
-                      <g>
-                        <path d="M439.296,84.91c-1.024,0-2.56-0.512-4.096-0.512H112.64l-5.12-34.304C104.448,27.566,84.992,10.67,61.952,10.67H20.48
-                     C9.216,10.67,0,19.886,0,31.15c0,11.264,9.216,20.48,20.48,20.48h41.472c2.56,0,4.608,2.048,5.12,4.608l31.744,216.064
-                     c4.096,27.136,27.648,47.616,55.296,47.616h212.992c26.624,0,49.664-18.944,55.296-45.056l33.28-166.4
-                     C457.728,97.71,450.56,86.958,439.296,84.91z" />
-                      </g>
-                    </g>
-                    <g>
-                      <g>
-                        <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
-                     c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
-                      </g>
-                    </g>
-                  </svg>
-                </a>
-              </div>
+            <div class="grid2">
+                <div class="block-stl3 stl2">
+                    <div class="fixed-bg" style="background: url('/static/main/images/img9.jpg');"></div>
+                    <div class="img-holder">
+                        <img src="/static/main/images/img9.png" alt="" class="img-responsive">
+                    </div>
+                    <div class="offer-block">
+                        <p class="top-h">sunday offer</p>
+                        <h2>wowooo combo pack special offer</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ornare.</p>
+                        <a href="shopping_cart.html" class="btn3">shop now</a>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </div>
-  </section>
+</section>
 
-  <!-- end offer section -->
-
-  <!-- food section -->
-
-  <section class="food_section layout_padding-bottom">
+<section class="deal-of-day new-block">
     <div class="container">
-      <div class="heading_container heading_center">
-        <h2>
-          Our Menu
-        </h2>
-      </div>
-
-      <ul class="filters_menu">
-        <li class="active" data-filter="*">All</li>
-        <li data-filter=".burger">Burger</li>
-        <li data-filter=".pizza">Pizza</li>
-        <li data-filter=".pasta">Pasta</li>
-        <li data-filter=".fries">Fries</li>
-      </ul>
-
-      <div class="filters-content">
-        <div class="row grid">
-          <div class="col-sm-6 col-lg-4 all pizza">
-            <div class="box">
-              <div>
-                <div class="img-box">
-                  <img src="images/f1.png" alt="">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="title">
+                    <p class="top-h">winter special offer</p>
+                    <h2>deal of the day</h2>
+                    <div class="btm-style"><span><img src="/static/main/images/btm-style.png" alt="" class="img-responsive"></span></div>
+                    <p class="bottom-p">Lorem ipsum dolor sit amet consectetur adipiscing elit. <br>Curabitur erat turpis posuere ac ante at</p>
                 </div>
-                <div class="detail-box">
-                  <h5>
-                    Delicious Pizza
-                  </h5>
-                  <p>
-                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
-                  </p>
-                  <div class="options">
-                    <h6>
-                      $20
-                    </h6>
-                    <a href="">
-                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
-                        <g>
-                          <g>
-                            <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
-                         c29.184,0,53.248-23.552,53.248-53.248C398.336,362.926,374.784,338.862,345.6,338.862z" />
-                          </g>
-                        </g>
-                        <g>
-                          <g>
-                            <path d="M439.296,84.91c-1.024,0-2.56-0.512-4.096-0.512H112.64l-5.12-34.304C104.448,27.566,84.992,10.67,61.952,10.67H20.48
-                         C9.216,10.67,0,19.886,0,31.15c0,11.264,9.216,20.48,20.48,20.48h41.472c2.56,0,4.608,2.048,5.12,4.608l31.744,216.064
-                         c4.096,27.136,27.648,47.616,55.296,47.616h212.992c26.624,0,49.664-18.944,55.296-45.056l33.28-166.4
-                         C457.728,97.71,450.56,86.958,439.296,84.91z" />
-                          </g>
-                        </g>
-                        <g>
-                          <g>
-                            <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
-                         c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
-                          </g>
-                        </g>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
             </div>
-          </div>
-          <div class="col-sm-6 col-lg-4 all burger">
-            <div class="box">
-              <div>
-                <div class="img-box">
-                  <img src="images/f2.png" alt="">
-                </div>
-                <div class="detail-box">
-                  <h5>
-                    Delicious Burger
-                  </h5>
-                  <p>
-                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
-                  </p>
-                  <div class="options">
-                    <h6>
-                      $15
-                    </h6>
-                    <a href="">
-                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
-                        <g>
-                          <g>
-                            <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
-                         c29.184,0,53.248-23.552,53.248-53.248C398.336,362.926,374.784,338.862,345.6,338.862z" />
-                          </g>
-                        </g>
-                        <g>
-                          <g>
-                            <path d="M439.296,84.91c-1.024,0-2.56-0.512-4.096-0.512H112.64l-5.12-34.304C104.448,27.566,84.992,10.67,61.952,10.67H20.48
-                         C9.216,10.67,0,19.886,0,31.15c0,11.264,9.216,20.48,20.48,20.48h41.472c2.56,0,4.608,2.048,5.12,4.608l31.744,216.064
-                         c4.096,27.136,27.648,47.616,55.296,47.616h212.992c26.624,0,49.664-18.944,55.296-45.056l33.28-166.4
-                         C457.728,97.71,450.56,86.958,439.296,84.91z" />
-                          </g>
-                        </g>
-                        <g>
-                          <g>
-                            <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
-                         c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
-                          </g>
-                        </g>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
+            <div class="col-lg-12 text-center">
+                <div id="ofr_end"></div>
             </div>
-          </div>
-          <div class="col-sm-6 col-lg-4 all pizza">
-            <div class="box">
-              <div>
-                <div class="img-box">
-                  <img src="images/f3.png" alt="">
+            <div class="col-lg-12">
+                <div class="item-slider2 owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="block-stl2">
+                            <div class="img-holder">
+                                <img src="/static/main/images/img3.png" alt="" class="img-responsive">
+                            </div>
+                            <div class="text-block">
+                                <h3>Veggie Supreme</h3>
+                                <p class="sz">Size : Regular</p>
+                                <p class="price"><span>$6.00</span> <del>$8.00 40% off</del></p>
+                            </div>
+                            <div class="btn-sec">
+                                <a href="product_single.html" class="btn4">About More</a>
+                                <a href="shopping_cart.html" class="btn1 stl2">Add to Cart</a>
+                            </div>
+                            <span class="nonveg veg-nonveg"></span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="block-stl2">
+                            <div class="img-holder">
+                                <img src="/static/main/images/img4.png" alt="" class="img-responsive">
+                            </div>
+                            <div class="text-block">
+                                <h3>Veggie Supreme</h3>
+                                <p class="sz">Size : Regular</p>
+                                <p class="price"><span>$6.00</span> <del>$8.00 40% off</del></p>
+                            </div>
+                            <div class="btn-sec">
+                                <a href="product_single.html" class="btn4">About More</a>
+                                <a href="shopping_cart.html" class="btn1 stl2">Add to Cart</a>
+                            </div>
+                            <span class="veg veg-nonveg"></span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="block-stl2">
+                            <div class="img-holder">
+                                <img src="/static/main/images/img5.png" alt="" class="img-responsive">
+                            </div>
+                            <div class="text-block">
+                                <h3>Veggie Supreme</h3>
+                                <p class="sz">Size : Regular</p>
+                                <p class="price"><span>$6.00</span> <del>$8.00 40% off</del></p>
+                            </div>
+                            <div class="btn-sec">
+                                <a href="product_single.html" class="btn4">About More</a>
+                                <a href="shopping_cart.html" class="btn1 stl2">Add to Cart</a>
+                            </div>
+                            <span class="nonveg veg-nonveg"></span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="block-stl2">
+                            <div class="img-holder">
+                                <img src="/static/main/images/img.png" alt="" class="img-responsive">
+                            </div>
+                            <div class="text-block">
+                                <h3>Veggie Supreme</h3>
+                                <p class="sz">Size : Regular</p>
+                                <p class="price"><span>$6.00</span> <del>$8.00 40% off</del></p>
+                            </div>
+                            <div class="btn-sec">
+                                <a href="product_single.html" class="btn4">About More</a>
+                                <a href="shopping_cart.html" class="btn1 stl2">Add to Cart</a>
+                            </div>
+                            <span class="nonveg veg-nonveg"></span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="block-stl2">
+                            <div class="img-holder">
+                                <img src="/static/main/images/img5.png" alt="" class="img-responsive">
+                            </div>
+                            <div class="text-block">
+                                <h3>Veggie Supreme</h3>
+                                <p class="sz">Size : Regular</p>
+                                <p class="price"><span>$6.00</span> <del>$8.00 40% off</del></p>
+                            </div>
+                            <div class="btn-sec">
+                                <a href="product_single.html" class="btn4">About More</a>
+                                <a href="shopping_cart.html" class="btn1 stl2">Add to Cart</a>
+                            </div>
+                            <span class="veg veg-nonveg"></span>
+                        </div>
+                    </div>
                 </div>
-                <div class="detail-box">
-                  <h5>
-                    Delicious Pizza
-                  </h5>
-                  <p>
-                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
-                  </p>
-                  <div class="options">
-                    <h6>
-                      $17
-                    </h6>
-                    <a href="">
-                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
-                        <g>
-                          <g>
-                            <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
-                         c29.184,0,53.248-23.552,53.248-53.248C398.336,362.926,374.784,338.862,345.6,338.862z" />
-                          </g>
-                        </g>
-                        <g>
-                          <g>
-                            <path d="M439.296,84.91c-1.024,0-2.56-0.512-4.096-0.512H112.64l-5.12-34.304C104.448,27.566,84.992,10.67,61.952,10.67H20.48
-                         C9.216,10.67,0,19.886,0,31.15c0,11.264,9.216,20.48,20.48,20.48h41.472c2.56,0,4.608,2.048,5.12,4.608l31.744,216.064
-                         c4.096,27.136,27.648,47.616,55.296,47.616h212.992c26.624,0,49.664-18.944,55.296-45.056l33.28-166.4
-                         C457.728,97.71,450.56,86.958,439.296,84.91z" />
-                          </g>
-                        </g>
-                        <g>
-                          <g>
-                            <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
-                         c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
-                          </g>
-                        </g>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
             </div>
-          </div>
-          <div class="col-sm-6 col-lg-4 all pasta">
-            <div class="box">
-              <div>
-                <div class="img-box">
-                  <img src="images/f4.png" alt="">
-                </div>
-                <div class="detail-box">
-                  <h5>
-                    Delicious Pasta
-                  </h5>
-                  <p>
-                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
-                  </p>
-                  <div class="options">
-                    <h6>
-                      $18
-                    </h6>
-                    <a href="">
-                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
-                        <g>
-                          <g>
-                            <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
-                         c29.184,0,53.248-23.552,53.248-53.248C398.336,362.926,374.784,338.862,345.6,338.862z" />
-                          </g>
-                        </g>
-                        <g>
-                          <g>
-                            <path d="M439.296,84.91c-1.024,0-2.56-0.512-4.096-0.512H112.64l-5.12-34.304C104.448,27.566,84.992,10.67,61.952,10.67H20.48
-                         C9.216,10.67,0,19.886,0,31.15c0,11.264,9.216,20.48,20.48,20.48h41.472c2.56,0,4.608,2.048,5.12,4.608l31.744,216.064
-                         c4.096,27.136,27.648,47.616,55.296,47.616h212.992c26.624,0,49.664-18.944,55.296-45.056l33.28-166.4
-                         C457.728,97.71,450.56,86.958,439.296,84.91z" />
-                          </g>
-                        </g>
-                        <g>
-                          <g>
-                            <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
-                         c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
-                          </g>
-                        </g>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4 all fries">
-            <div class="box">
-              <div>
-                <div class="img-box">
-                  <img src="images/f5.png" alt="">
-                </div>
-                <div class="detail-box">
-                  <h5>
-                    French Fries
-                  </h5>
-                  <p>
-                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
-                  </p>
-                  <div class="options">
-                    <h6>
-                      $10
-                    </h6>
-                    <a href="">
-                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
-                        <g>
-                          <g>
-                            <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
-                         c29.184,0,53.248-23.552,53.248-53.248C398.336,362.926,374.784,338.862,345.6,338.862z" />
-                          </g>
-                        </g>
-                        <g>
-                          <g>
-                            <path d="M439.296,84.91c-1.024,0-2.56-0.512-4.096-0.512H112.64l-5.12-34.304C104.448,27.566,84.992,10.67,61.952,10.67H20.48
-                         C9.216,10.67,0,19.886,0,31.15c0,11.264,9.216,20.48,20.48,20.48h41.472c2.56,0,4.608,2.048,5.12,4.608l31.744,216.064
-                         c4.096,27.136,27.648,47.616,55.296,47.616h212.992c26.624,0,49.664-18.944,55.296-45.056l33.28-166.4
-                         C457.728,97.71,450.56,86.958,439.296,84.91z" />
-                          </g>
-                        </g>
-                        <g>
-                          <g>
-                            <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
-                         c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
-                          </g>
-                        </g>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4 all pizza">
-            <div class="box">
-              <div>
-                <div class="img-box">
-                  <img src="images/f6.png" alt="">
-                </div>
-                <div class="detail-box">
-                  <h5>
-                    Delicious Pizza
-                  </h5>
-                  <p>
-                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
-                  </p>
-                  <div class="options">
-                    <h6>
-                      $15
-                    </h6>
-                    <a href="">
-                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
-                        <g>
-                          <g>
-                            <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
-                         c29.184,0,53.248-23.552,53.248-53.248C398.336,362.926,374.784,338.862,345.6,338.862z" />
-                          </g>
-                        </g>
-                        <g>
-                          <g>
-                            <path d="M439.296,84.91c-1.024,0-2.56-0.512-4.096-0.512H112.64l-5.12-34.304C104.448,27.566,84.992,10.67,61.952,10.67H20.48
-                         C9.216,10.67,0,19.886,0,31.15c0,11.264,9.216,20.48,20.48,20.48h41.472c2.56,0,4.608,2.048,5.12,4.608l31.744,216.064
-                         c4.096,27.136,27.648,47.616,55.296,47.616h212.992c26.624,0,49.664-18.944,55.296-45.056l33.28-166.4
-                         C457.728,97.71,450.56,86.958,439.296,84.91z" />
-                          </g>
-                        </g>
-                        <g>
-                          <g>
-                            <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
-                         c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
-                          </g>
-                        </g>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4 all burger">
-            <div class="box">
-              <div>
-                <div class="img-box">
-                  <img src="images/f7.png" alt="">
-                </div>
-                <div class="detail-box">
-                  <h5>
-                    Tasty Burger
-                  </h5>
-                  <p>
-                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
-                  </p>
-                  <div class="options">
-                    <h6>
-                      $12
-                    </h6>
-                    <a href="">
-                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
-                        <g>
-                          <g>
-                            <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
-                         c29.184,0,53.248-23.552,53.248-53.248C398.336,362.926,374.784,338.862,345.6,338.862z" />
-                          </g>
-                        </g>
-                        <g>
-                          <g>
-                            <path d="M439.296,84.91c-1.024,0-2.56-0.512-4.096-0.512H112.64l-5.12-34.304C104.448,27.566,84.992,10.67,61.952,10.67H20.48
-                         C9.216,10.67,0,19.886,0,31.15c0,11.264,9.216,20.48,20.48,20.48h41.472c2.56,0,4.608,2.048,5.12,4.608l31.744,216.064
-                         c4.096,27.136,27.648,47.616,55.296,47.616h212.992c26.624,0,49.664-18.944,55.296-45.056l33.28-166.4
-                         C457.728,97.71,450.56,86.958,439.296,84.91z" />
-                          </g>
-                        </g>
-                        <g>
-                          <g>
-                            <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
-                         c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
-                          </g>
-                        </g>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4 all burger">
-            <div class="box">
-              <div>
-                <div class="img-box">
-                  <img src="images/f8.png" alt="">
-                </div>
-                <div class="detail-box">
-                  <h5>
-                    Tasty Burger
-                  </h5>
-                  <p>
-                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
-                  </p>
-                  <div class="options">
-                    <h6>
-                      $14
-                    </h6>
-                    <a href="">
-                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
-                        <g>
-                          <g>
-                            <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
-                         c29.184,0,53.248-23.552,53.248-53.248C398.336,362.926,374.784,338.862,345.6,338.862z" />
-                          </g>
-                        </g>
-                        <g>
-                          <g>
-                            <path d="M439.296,84.91c-1.024,0-2.56-0.512-4.096-0.512H112.64l-5.12-34.304C104.448,27.566,84.992,10.67,61.952,10.67H20.48
-                         C9.216,10.67,0,19.886,0,31.15c0,11.264,9.216,20.48,20.48,20.48h41.472c2.56,0,4.608,2.048,5.12,4.608l31.744,216.064
-                         c4.096,27.136,27.648,47.616,55.296,47.616h212.992c26.624,0,49.664-18.944,55.296-45.056l33.28-166.4
-                         C457.728,97.71,450.56,86.958,439.296,84.91z" />
-                          </g>
-                        </g>
-                        <g>
-                          <g>
-                            <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
-                         c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
-                          </g>
-                        </g>
-                        <g>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4 all pasta">
-            <div class="box">
-              <div>
-                <div class="img-box">
-                  <img src="images/f9.png" alt="">
-                </div>
-                <div class="detail-box">
-                  <h5>
-                    Delicious Pasta
-                  </h5>
-                  <p>
-                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
-                  </p>
-                  <div class="options">
-                    <h6>
-                      $10
-                    </h6>
-                    <a href="">
-                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
-                        <g>
-                          <g>
-                            <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
-                         c29.184,0,53.248-23.552,53.248-53.248C398.336,362.926,374.784,338.862,345.6,338.862z" />
-                          </g>
-                        </g>
-                        <g>
-                          <g>
-                            <path d="M439.296,84.91c-1.024,0-2.56-0.512-4.096-0.512H112.64l-5.12-34.304C104.448,27.566,84.992,10.67,61.952,10.67H20.48
-                         C9.216,10.67,0,19.886,0,31.15c0,11.264,9.216,20.48,20.48,20.48h41.472c2.56,0,4.608,2.048,5.12,4.608l31.744,216.064
-                         c4.096,27.136,27.648,47.616,55.296,47.616h212.992c26.624,0,49.664-18.944,55.296-45.056l33.28-166.4
-                         C457.728,97.71,450.56,86.958,439.296,84.91z" />
-                          </g>
-                        </g>
-                        <g>
-                          <g>
-                            <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
-                         c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
-                          </g>
-                        </g>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-      <div class="btn-box">
-        <a href="">
-          View More
-        </a>
-      </div>
     </div>
-  </section>
+</section>
 
-  <!-- end food section -->
 
-  <!-- about section -->
-
-  <section class="about_section layout_padding">
-    <div class="container  ">
-
-      <div class="row">
-        <div class="col-md-6 ">
-          <div class="img-box">
-            <img src="images/about-img.png" alt="">
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="detail-box">
-            <div class="heading_container">
-              <h2>
-                We Are Feane
-              </h2>
+<section class="amezing-offers new-block">
+    <div class="overlay"></div>
+    <div class="fixed-bg parallax" style="background: url('/static/main/images/bg1.png');"></div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="img-holder">
+                    <img src="/static/main/images/pz1.png" alt="" class="img-responsive">		
+                </div>
             </div>
-            <p>
-              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
-              in some form, by injected humour, or randomised words which don't look even slightly believable. If you
-              are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in
-              the middle of text. All
-            </p>
-            <a href="">
-              Read More
-            </a>
-          </div>
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="text-block-stl1">
+                    <div class="title">
+                        <p class="top-h">amazing offers online</p>
+                        <h2>50% off pizzas online</h2>
+                        <p class="bottom-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ornare placerat tellus sit amet ullamcorper.</p>
+                        <a href="#" class="btn1 stl2">buy now</a>
+                        <a href="#" class="btn1 stl1">about more</a>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </section>
+</section>
 
-  <!-- end about section -->
-
-  <!-- book section -->
-  <section class="book_section layout_padding">
+<section class="this-month new-block">
     <div class="container">
-      <div class="heading_container">
-        <h2>
-          Book A Table
-        </h2>
-      </div>
-      <div class="row">
-        <div class="col-md-6">
-          <div class="form_container">
-            <form action="">
-              <div>
-                <input type="text" class="form-control" placeholder="Your Name" />
-              </div>
-              <div>
-                <input type="text" class="form-control" placeholder="Phone Number" />
-              </div>
-              <div>
-                <input type="email" class="form-control" placeholder="Your Email" />
-              </div>
-              <div>
-                <select class="form-control nice-select wide">
-                  <option value="" disabled selected>
-                    How many persons?
-                  </option>
-                  <option value="">
-                    2
-                  </option>
-                  <option value="">
-                    3
-                  </option>
-                  <option value="">
-                    4
-                  </option>
-                  <option value="">
-                    5
-                  </option>
-                </select>
-              </div>
-              <div>
-                <input type="date" class="form-control">
-              </div>
-              <div class="btn_box">
-                <button>
-                  Book Now
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="map_container ">
-            <div id="googleMap"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- end book section -->
-
-  <!-- client section -->
-
-  <section class="client_section layout_padding-bottom">
-    <div class="container">
-      <div class="heading_container heading_center psudo_white_primary mb_45">
-        <h2>
-          What Says Our Customers
-        </h2>
-      </div>
-      <div class="carousel-wrap row ">
-        <div class="owl-carousel client_owl-carousel">
-          <div class="item">
-            <div class="box">
-              <div class="detail-box">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-                </p>
-                <h6>
-                  Moana Michell
-                </h6>
-                <p>
-                  magna aliqua
-                </p>
-              </div>
-              <div class="img-box">
-                <img src="images/client1.jpg" alt="" class="box-img">
-              </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="title">
+                    <p class="top-h">winter special offer</p>
+                    <h2>deal of the day</h2>
+                    <div class="btm-style"><span><img src="/static/main/images/btm-style.png" alt="" class="img-responsive"></span></div>
+                </div>
             </div>
-          </div>
-          <div class="item">
-            <div class="box">
-              <div class="detail-box">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-                </p>
-                <h6>
-                  Mike Hamell
-                </h6>
-                <p>
-                  magna aliqua
-                </p>
-              </div>
-              <div class="img-box">
-                <img src="images/client2.jpg" alt="" class="box-img">
-              </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="block-stl2">
+                    <div class="img-holder">
+                        <img src="/static/main/images/img3.png" alt="" class="img-responsive">
+                    </div>
+                    <div class="text-block">
+                        <h3>Veggie Supreme</h3>
+                        <p class="sz">Size : Regular</p>
+                        <p class="price"><span>$6.00</span> <del>$8.00 40% off</del></p>
+                    </div>
+                    <div class="btn-sec">
+                        <a href="product_single.html" class="btn4">About More</a>
+                        <a href="shopping_cart.html" class="btn1 stl2">Add to Cart</a>
+                    </div>
+                    <span class="nonveg veg-nonveg"></span>
+                </div>
             </div>
-          </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="block-stl2">
+                    <div class="img-holder">
+                        <img src="/static/main/images/img.png" alt="" class="img-responsive">
+                    </div>
+                    <div class="text-block">
+                        <h3>Veggie Supreme</h3>
+                        <p class="sz">Size : Regular</p>
+                        <p class="price"><span>$6.00</span> <del>$8.00 40% off</del></p>
+                    </div>
+                    <div class="btn-sec">
+                        <a href="product_single.html" class="btn4">About More</a>
+                        <a href="shopping_cart.html" class="btn1 stl2">Add to Cart</a>
+                    </div>
+                    <span class="nonveg veg-nonveg"></span>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="block-stl2">
+                    <div class="img-holder">
+                        <img src="/static/main/images/img2.png" alt="" class="img-responsive">
+                    </div>
+                    <div class="text-block">
+                        <h3>Veggie Supreme</h3>
+                        <p class="sz">Size : Regular</p>
+                        <p class="price"><span>$6.00</span> <del>$8.00 40% off</del></p>
+                    </div>
+                    <div class="btn-sec">
+                        <a href="product_single.html" class="btn4">About More</a>
+                        <a href="shopping_cart.html" class="btn1 stl2">Add to Cart</a>
+                    </div>
+                    <span class="veg veg-nonveg"></span>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="block-stl2">
+                    <div class="img-holder">
+                        <img src="/static/main/images/img4.png" alt="" class="img-responsive">
+                    </div>
+                    <div class="text-block">
+                        <h3>Veggie Supreme</h3>
+                        <p class="sz">Size : Regular</p>
+                        <p class="price"><span>$6.00</span> <del>$8.00 40% off</del></p>
+                    </div>
+                    <div class="btn-sec">
+                        <a href="product_single.html" class="btn4">About More</a>
+                        <a href="shopping_cart.html" class="btn1 stl2">Add to Cart</a>
+                    </div>
+                    <span class="nonveg veg-nonveg"></span>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="block-stl2">
+                    <div class="img-holder">
+                        <img src="/static/main/images/img5.png" alt="" class="img-responsive">
+                    </div>
+                    <div class="text-block">
+                        <h3>Veggie Supreme</h3>
+                        <p class="sz">Size : Regular</p>
+                        <p class="price"><span>$6.00</span> <del>$8.00 40% off</del></p>
+                    </div>
+                    <div class="btn-sec">
+                        <a href="product_single.html" class="btn4">About More</a>
+                        <a href="shopping_cart.html" class="btn1 stl2">Add to Cart</a>
+                    </div>
+                    <span class="veg veg-nonveg"></span>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="block-stl2">
+                    <div class="img-holder">
+                        <img src="/static/main/images/img.png" alt="" class="img-responsive">
+                    </div>
+                    <div class="text-block">
+                        <h3>Veggie Supreme</h3>
+                        <p class="sz">Size : Regular</p>
+                        <p class="price"><span>$6.00</span> <del>$8.00 40% off</del></p>
+                    </div>
+                    <div class="btn-sec">
+                        <a href="product_single.html" class="btn4">About More</a>
+                        <a href="shopping_cart.html" class="btn1 stl2">Add to Cart</a>
+                    </div>
+                    <span class="nonveg veg-nonveg"></span>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="block-stl2">
+                    <div class="img-holder">
+                        <img src="/static/main/images/img2.png" alt="" class="img-responsive">
+                    </div>
+                    <div class="text-block">
+                        <h3>Veggie Supreme</h3>
+                        <p class="sz">Size : Regular</p>
+                        <p class="price"><span>$6.00</span> <del>$8.00 40% off</del></p>
+                    </div>
+                    <div class="btn-sec">
+                        <a href="product_single.html" class="btn4">About More</a>
+                        <a href="shopping_cart.html" class="btn1 stl2">Add to Cart</a>
+                    </div>
+                    <span class="veg veg-nonveg"></span>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="block-stl2">
+                    <div class="img-holder">
+                        <img src="/static/main/images/img1.png" alt="" class="img-responsive">
+                    </div>
+                    <div class="text-block">
+                        <h3>Veggie Supreme</h3>
+                        <p class="sz">Size : Regular</p>
+                        <p class="price"><span>$6.00</span> <del>$8.00 40% off</del></p>
+                    </div>
+                    <div class="btn-sec">
+                        <a href="product_single.html" class="btn4">About More</a>
+                        <a href="shopping_cart.html" class="btn1 stl2">Add to Cart</a>
+                    </div>
+                    <span class="veg veg-nonveg"></span>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </section>
+</section>
 
-  <!-- end client section -->
+<section class="this-month-blog new-block">
+    <div class="container-fluid no-gutter">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="title">
+                    <p class="top-h">this month</p>
+                    <h2>Our blog</h2>
+                    <div class="btm-style"><span><img src="/static/main/images/btm-style.png" alt="" class="img-responsive"></span></div>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="blog-slider1 owl-theme owl-carousel">
+                    <div class="item">
+                        <div class="blog-stl1">
+                            <div class="img-holder">
+                                <img src="/static/main/images/boy.jpg" alt="" class="img-responsive" />
+                                <div class="ovrl-block">
+                                    <h3>Donec leo metus placerat quis lorem sed ultricies bibendum metus.</h3>
+                                    <a href="blog_single.html" class="btn1 stl2">read more</a>
+                                </div>
+                                <ul class="blog-info-nav">
+                                    <li><a href="#"><i class="flaticon-profile"></i>Shamiyo</a></li>
+                                    <li><a href="#"><i class="flaticon-chat"></i>245 Coments</a></li>
+                                    <li><a href="#"><i class="flaticon-calendar"></i>2/04/2017</a></li>
+                                </ul>	
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="blog-stl1">
+                            <div class="img-holder">
+                                <img src="/static/main/images/girl.jpg" alt="" class="img-responsive" />
+                                <div class="ovrl-block">
+                                    <h3>Donec leo metus placerat quis lorem sed ultricies bibendum metus.</h3>
+                                    <a href="blog_single.html" class="btn1 stl2">read more</a>
+                                </div>
+                                <ul class="blog-info-nav">
+                                    <li><a href="#"><i class="flaticon-profile"></i>Shamiyo</a></li>
+                                    <li><a href="#"><i class="flaticon-chat"></i>245 Coments</a></li>
+                                    <li><a href="#"><i class="flaticon-calendar"></i>2/04/2017</a></li>
+                                </ul>	
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="blog-stl1">
+                            <div class="img-holder">
+                                <img src="/static/main/images/girl1.jpg" alt="" class="img-responsive" />
+                                <div class="ovrl-block">
+                                    <h3>Donec leo metus placerat quis lorem sed ultricies bibendum metus.</h3>
+                                    <a href="blog_single.html" class="btn1 stl2">read more</a>
+                                </div>
+                                <ul class="blog-info-nav">
+                                    <li><a href="#"><i class="flaticon-profile"></i>Shamiyo</a></li>
+                                    <li><a href="#"><i class="flaticon-chat"></i>245 Coments</a></li>
+                                    <li><a href="#"><i class="flaticon-calendar"></i>2/04/2017</a></li>
+                                </ul>	
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="blog-stl1">
+                            <div class="img-holder">
+                                <img src="/static/main/images/girl2.jpg" alt="" class="img-responsive" />
+                                <div class="ovrl-block">
+                                    <h3>Donec leo metus placerat quis lorem sed ultricies bibendum metus.</h3>
+                                    <a href="blog_single.html" class="btn1 stl2">read more</a>
+                                </div>
+                                <ul class="blog-info-nav">
+                                    <li><a href="#"><i class="flaticon-profile"></i>Shamiyo</a></li>
+                                    <li><a href="#"><i class="flaticon-chat"></i>245 Coments</a></li>
+                                    <li><a href="#"><i class="flaticon-calendar"></i>2/04/2017</a></li>
+                                </ul>	
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-{% endblock %}
+{% endblock content %}

@@ -23,7 +23,7 @@
                         <tr>
                             <td>{{ cart.item.title }} <span class="badge badge-{{ cart.item.label_colour }}">{{ cart.item.labels }}</span></td>
                             <td>{{ cart.item.description }}</td>
-                            <td>{{ cart.item.instructions }}</td>
+                            <td>{{ cart.item.conditions }}</td>
                             <td>{{ cart.item.price }}</td>
                             <td>{{ cart.item.pieces }} pieces</td>
                             <td><a class="btn btn-danger" href="{% url 'main:remove-from-cart' cart.id %}">Delete</a></td>
@@ -43,7 +43,7 @@
                         <li class="list-group-item list-group-item-light text-center text-dark">Total: {{ total }}</li>
                         <li class="list-group-item list-group-item-light text-center text-dark">Number of Orders: {{ count }}</li>
                         <li class="list-group-item list-group-item-light text-center text-dark">Total Pieces: {{ total_pieces }}</li>
-                        <li class="list-group-item list-group-item-light text-center text-dark"><a class="btn btn-primary" href="{% url 'main:ordered' %}">Proceed To Checkout</a></li>
+                        <li class="list-group-item list-group-item-light text-center text-dark"><a class="btn btn-primary" href="{% url 'main:ordered' %}">Checkout</a></li>
                         <li class="list-group-item list-group-item-light text-center"><a class="btn btn-success" href="/">Continue Buying</a></li>
                       </ul>
                 </div>

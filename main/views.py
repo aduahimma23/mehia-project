@@ -1,15 +1,18 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect, get_list_or_404
 from django.contrib.auth.decorators import login_required
 from geopy.geocoders import GoogleV3
 from geopy.exc import GeocoderTimedOut, GeocoderQuotaExceeded, GeocoderServiceError
-from .models import DeliveryAddress
+from .models import DeliveryAddress, Deliverer
+from django.utils import timezone
 
-# Create your views here.
+
 def home(request):
     return render(request, 'main/index.html')
 
+def vendor_list(request):
+    return render(request, '')
 
-@login_required
+@login_required()
 def add_delivery_address(request):
     API_KEY = ''
     if request == 'POST':
@@ -37,3 +40,12 @@ def add_delivery_address(request):
             return render(request, 'main/geocoding_error.html', {'error_message': str(ex)})
     
     return render(request, 'main/add_delivery_address.html')
+
+def contact(request):
+    return render(request, 'main/contact.html')
+
+def menu(request):
+    return render(request, 'main/menu.html')
+
+def about(request):
+    return render(request, 'main/about_us.html')
